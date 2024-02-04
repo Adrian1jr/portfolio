@@ -5,9 +5,9 @@ import { IoLogoGithub } from "react-icons/io";
 
 export default function Navbar() {
   const menuItems = [
-    { id: 1, title: "Inicio", link: "#" },
-    { id: 2, title: "Acerca de", link: "#" },
-    { id: 3, title: "Portafolio", link: "#" },
+    { id: 1, title: "Sobre mi", link: "#" },
+    { id: 2, title: "Habilidades", link: "#" },
+    { id: 3, title: "Trabajos", link: "#" },
   ];
 
   return (
@@ -45,14 +45,6 @@ export default function Navbar() {
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* <button
-                  type="button"
-                  className="relative rounded-full bg-white p-1 text-gray-400 hover:text-gray-500 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
-                >
-                  <span className="absolute -inset-1.5" />
-                  <span className="sr-only">View notifications</span>
-                  <BellIcon className="h-6 w-6" aria-hidden="true" />
-                </button> */}
                 {/* Github button */}
                 <a href="#" className="text-gray-400 hover:text-gray-500">
                   <IoLogoGithub className="h-6 w-6" />
