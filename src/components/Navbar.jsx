@@ -2,16 +2,40 @@ import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { logo } from "../assets/barrel";
 import { IoLogoGithub } from "react-icons/io";
+import { useEffect, useState } from "react";
 
 export default function Navbar() {
+  const [isScrolled, setIsScrolled] = useState(false);
   const menuItems = [
     { id: 1, title: "Sobre mi", link: "#" },
     { id: 2, title: "Habilidades", link: "#" },
     { id: 3, title: "Trabajos", link: "#" },
   ];
 
+  useEffect(() => {
+    const handleScroll = () => {
+      const offset = window.scrollY;
+      if (offset > 50) {
+        setIsScrolled(true);
+      } else {
+        setIsScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => {
+      window.removeEventListener("scroll", handleScroll);
+    };
+  }, []);
+
   return (
-    <Disclosure as="nav" className="bg-white shadow">
+    <Disclosure
+      as="nav"
+      className={`bg-white shadow transition-all ease-in-out duration-1000 ${
+        isScrolled ? "fixed top-0 w-full z-50" : ""
+      }`}
+    >
       {({ open }) => (
         <>
           <div className="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
@@ -37,7 +61,7 @@ export default function Navbar() {
                     <a
                       key={item.id}
                       href={item.link}
-                      className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-sm font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
+                      className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     >
                       {item.title}
                     </a>
@@ -47,7 +71,7 @@ export default function Navbar() {
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
                 {/* Github button */}
                 <a href="#" className="text-gray-400 hover:text-gray-500">
-                  <IoLogoGithub className="h-6 w-6" />
+                  <IoLogoGithub className="h-8 w-8" />
                 </a>
               </div>
             </div>
