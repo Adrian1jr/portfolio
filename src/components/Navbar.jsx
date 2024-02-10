@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { logo } from "../assets/barrel";
@@ -7,9 +8,10 @@ import { useEffect, useState } from "react";
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
   const menuItems = [
-    { id: 1, title: "Sobre mi", link: "#" },
+    { id: 1, title: "Sobre mi", link: "#about" },
     { id: 2, title: "Habilidades", link: "#" },
-    { id: 3, title: "Trabajos", link: "#" },
+    { id: 3, title: "Proyectos", link: "#" },
+    { id: 4, title: "Contacto", link: "#" },
   ];
 
   useEffect(() => {
@@ -58,19 +60,26 @@ export default function Navbar() {
                 </div>
                 <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
                   {menuItems.map((item) => (
-                    <a
+                    <Link
                       key={item.id}
-                      href={item.link}
+                      to={item.link.substring(1)}
+                      spy={true}
+                      smooth={true}
+                      offset={-70}
+                      duration={1000}
                       className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     >
                       {item.title}
-                    </a>
+                    </Link>
                   ))}
                 </div>
               </div>
               <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                {/* Github button */}
-                <a href="#" className="text-gray-400 hover:text-gray-500">
+                <a
+                  href="https://github.com/Adrian1jr"
+                  target="_blank"
+                  className="text-gray-400 hover:text-gray-500"
+                >
                   <IoLogoGithub className="h-8 w-8" />
                 </a>
               </div>
@@ -78,18 +87,26 @@ export default function Navbar() {
           </div>
 
           <Disclosure.Panel className="sm:hidden">
-            <div className="space-y-1 pb-4 pt-2">
-              {menuItems.map((item) => (
-                <Disclosure.Button
-                  key={item.id}
-                  as="a"
-                  href={item.link}
-                  className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700"
-                >
-                  {item.title}
-                </Disclosure.Button>
-              ))}
-            </div>
+            {({ close }) => (
+              <div className="space-y-1 pb-4 pt-2">
+                {menuItems.map((item) => (
+                  <Link
+                    key={item.id}
+                    to={item.link.substring(1)}
+                    spy={true}
+                    smooth={true}
+                    offset={window.scrollY > 50 ? -70 : -350}
+                    duration={500}
+                    className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 cursor-pointer"
+                    onClick={() => {
+                      close();
+                    }}
+                  >
+                    {item.title}
+                  </Link>
+                ))}
+              </div>
+            )}
           </Disclosure.Panel>
         </>
       )}

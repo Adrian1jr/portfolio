@@ -1,3 +1,5 @@
+import { about } from "../assets/barrel";
+
 export default function About() {
   const timeline = [
     {
@@ -32,8 +34,39 @@ export default function About() {
 
   return (
     <>
-      <h2 className="text-3xl text-center font-bold tracking-tight text-black pb-6 sm:text-4xl">
-        Experiencia
+      {/* Top */}
+      <div className="mx-auto max-w-7xl" id="about">
+        <div
+          className="mx-auto flex max-w-2xl flex-col gap-8 px-6 py-6 
+                 sm:p-8 lg:mx-0 lg:max-w-7xl lg:flex-row
+                 xl:gap-x-14"
+        >
+          <div className="w-full flex-auto">
+            <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
+              Adrian Tapia Herrera
+            </h2>
+            <p className="mt-6 text-lg leading-8">
+              Me gradué como Ingeniero en Sistemas Computacionales en el
+              <strong className="pl-1.5">
+                Instituto Tecnológico de Nuevo Laredo
+              </strong>
+              . Actualmente me dedico al desarollo web full stack y trabajo para
+              crear soluciones personalizadas para satisfacer las necesidades
+              específicas de los clientes.
+            </p>
+          </div>
+          <img
+            className="h-96 w-full flex-none rounded-2xl object-cover shadow-md 
+            lg:aspect-video lg:h-auto lg:max-w-lg"
+            src={about}
+            alt="Foto de Adrian Tapia graduado de la universidad ITNL."
+          />
+        </div>
+      </div>
+
+      {/* Bottom */}
+      <h2 className="text-3xl text-center font-bold tracking-tight text-black pb-6 mt-8 sm:text-4xl">
+        Experiencia Laboral
       </h2>
       <div className="mb-8 mt-14">
         <div className="mx-auto -mt-8 max-w-7xl px-6 lg:px-8">
