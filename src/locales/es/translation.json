@@ -32,6 +32,29 @@
           "date": "07/11/2022 - Actualidad",
           "dateTime": "2022-07"
         }
+      },
+
+      "contact": {
+        "title": "Contacto",
+        "subtitle": "¿Listo para llevar su negocio al siguiente nivel? Contáctame hoy y comencemos a trabajar juntos.",
+        "location": "Nuevo Laredo, Tamaulipas, México",
+        "email": {
+          "label": "Email",
+          "address": "adrian40jr@gmail.com"
+        },
+        "businessHours": "Horario de atención: Lunes a Viernes de 9:00 a 18:00 horas y Sábados de 9:00 a 14:00 horas (CST)",
+        "form": {
+          "namePlaceholder": "Nombre completo",
+          "emailPlaceholder": "Correo electrónico",
+          "subjectPlaceholder": "Asunto",
+          "messagePlaceholder": "Mensaje",
+          "submitButton": "Enviar"
+        },
+        "successTitle": "Correo enviado",
+        "successMessage": "Gracias por contactarme. Me pondré en contacto contigo lo antes posible.",
+        "errorTitle": "Error al enviar el correo",
+        "errorMessage": "Ocurrió un error al enviar el correo. Por favor, inténtalo de nuevo más tarde.",
+        "closeButton": "Cerrar"
       }
     }
 }

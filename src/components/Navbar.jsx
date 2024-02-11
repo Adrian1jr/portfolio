@@ -11,7 +11,7 @@ export default function Navbar() {
     { id: 1, title: "Sobre mi", link: "#about" },
     { id: 2, title: "Habilidades", link: "#" },
     { id: 3, title: "Proyectos", link: "#" },
-    { id: 4, title: "Contacto", link: "#" },
+    { id: 4, title: "Contacto", link: "#contact" },
   ];
 
   useEffect(() => {

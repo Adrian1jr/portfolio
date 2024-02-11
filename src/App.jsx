@@ -1,5 +1,6 @@
 import About from "./components/About";
 import BackToTopButton from "./components/BackToTopButton";
+import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -15,6 +16,7 @@ function App() {
       <div className="px-10">
         <Header />
         <About />
+        <Contact />
         <Footer />
       </div>
 

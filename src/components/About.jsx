@@ -90,10 +90,10 @@ export default function About() {
                     aria-hidden="true"
                   />
                 </time>
-                <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
+                <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-black">
                   {t(`timeline.${item.key}.name`)}
                 </p>
-                <p className="mt-1 text-base leading-7 text-gray-600">
+                <p className="mt-1 text-base leading-7 text-black">
                   {t(`timeline.${item.key}.description`)}
                 </p>
               </div>

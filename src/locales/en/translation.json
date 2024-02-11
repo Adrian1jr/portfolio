@@ -32,6 +32,29 @@
           "date": "11/07/2022 - Present",
           "dateTime": "2022-07"
         }
+      },
+
+      "contact": {
+        "title": "Contact",
+        "subtitle": "Ready to take your business to the next level? Contact me today and let's start working together.",
+        "location": "Nuevo Laredo, Tamaulipas, Mexico",
+        "email": {
+          "label": "Email",
+          "address": "adrian40jr@gmail.com"
+        },
+        "businessHours": "Business Hours: Monday to Friday from 9:00 AM to 6:00 PM and Saturdays from 9:00 AM to 2:00 PM (CST)",
+        "form": {
+          "namePlaceholder": "Full Name",
+          "emailPlaceholder": "Email",
+          "subjectPlaceholder": "Subject",
+          "messagePlaceholder": "Message",
+          "submitButton": "Send"
+        },
+        "successTitle": "Email sent",
+        "successMessage": "Thank you for contacting me. I will get back to you as soon as possible.",
+        "errorTitle": "Error sending email",
+        "errorMessage": "An error occurred while sending the email. Please try again later.",
+        "closeButton": "Close"
       }
     }
 }
