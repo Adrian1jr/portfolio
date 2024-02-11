@@ -8,7 +8,7 @@ export default function Header() {
   return (
     <section
       className="header-container flex text-gray-600 body-font mx-auto 
-      max-w-7xl sm:px-6 lg:px-8 h-screen"
+      max-w-7xl sm:px-6 lg:px-8 h-dvh"
       id="header"
     >
       <div
