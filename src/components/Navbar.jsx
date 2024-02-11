@@ -2,8 +2,8 @@ import { Link } from "react-scroll";
 import { Disclosure } from "@headlessui/react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { logo } from "../assets/barrel";
-import { IoLogoGithub } from "react-icons/io";
 import { useEffect, useState } from "react";
+import LanguageMenu from "./LanguageMenu";
 
 export default function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -58,7 +58,7 @@ export default function Navbar() {
                 <div className="flex flex-shrink-0 items-center">
                   <img className="h-7 w-auto" src={logo} alt="Your Company" />
                 </div>
-                <div className="hidden sm:ml-6 sm:flex sm:space-x-8">
+                <div className="hidden sm:ml-6 sm:flex sm:space-x-8 cursor-pointer">
                   {menuItems.map((item) => (
                     <Link
                       key={item.id}
@@ -74,14 +74,8 @@ export default function Navbar() {
                   ))}
                 </div>
               </div>
-              <div className="absolute inset-y-0 right-0 flex items-center pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
-                <a
-                  href="https://github.com/Adrian1jr"
-                  target="_blank"
-                  className="text-gray-400 hover:text-gray-500"
-                >
-                  <IoLogoGithub className="h-8 w-8" />
-                </a>
+              <div className="absolute inset-y-0 right-0 flex items-center gap-4 pr-2 sm:static sm:inset-auto sm:ml-6 sm:pr-0">
+                <LanguageMenu />
               </div>
             </div>
           </div>

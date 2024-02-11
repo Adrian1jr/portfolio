@@ -1,8 +1,12 @@
+import { useTranslation } from "react-i18next";
 import { about } from "../assets/barrel";
 
 export default function About() {
+  const { t } = useTranslation();
+
   const timeline = [
     {
+      key: "marketingDigital",
       name: "Marketing Digital",
       description:
         "Desarrollo de sitios web y marketing digital en la empresa Intra Solutions.",
@@ -10,20 +14,23 @@ export default function About() {
       dateTime: "2021-04",
     },
     {
+      key: "programadorFrontEnd",
       name: "Programador Front-End",
       description:
-        "Programador Web, Maquetador basico y soporte preventivo y correctivo en la empresa Syntranet.",
+        "Programador Web, Maquetador básico y soporte preventivo y correctivo en la empresa Syntranet.",
       date: "05/04/2021 - 05/11/2022",
       dateTime: "2021-11",
     },
     {
+      key: "freelance",
       name: "Freelance",
       description:
-        "Experto en la construcción de soluciones personalizadas para satisfacer las necesidades específicas de los clientes. ",
+        "Experto en la construcción de soluciones personalizadas para satisfacer las necesidades específicas de los clientes.",
       date: "05/04/2022 - Actualidad",
       dateTime: "2022-12",
     },
     {
+      key: "programadorFullStack",
       name: "Programador Full-Stack",
       description:
         "Programacion front end y backend con multiples lenguajes/frameworks en la empresa Lead One LLC.",
@@ -45,15 +52,7 @@ export default function About() {
             <h2 className="text-3xl font-bold tracking-tight sm:text-4xl">
               Adrian Tapia Herrera
             </h2>
-            <p className="mt-6 text-lg leading-8">
-              Me gradué como Ingeniero en Sistemas Computacionales en el
-              <strong className="pl-1.5">
-                Instituto Tecnológico de Nuevo Laredo
-              </strong>
-              . Actualmente me dedico al desarollo web full stack y trabajo para
-              crear soluciones personalizadas para satisfacer las necesidades
-              específicas de los clientes.
-            </p>
+            <p className="mt-6 text-lg leading-8">{t("aboutDescription")}</p>
           </div>
           <img
             className="h-96 w-full flex-none rounded-2xl object-cover shadow-md 
@@ -66,7 +65,7 @@ export default function About() {
 
       {/* Bottom */}
       <h2 className="text-3xl text-center font-bold tracking-tight text-black pb-6 mt-8 sm:text-4xl">
-        Experiencia Laboral
+        {t("aboutExperienceTitle")}
       </h2>
       <div className="mb-8 mt-14">
         <div className="mx-auto -mt-8 max-w-7xl px-6 lg:px-8">
@@ -84,17 +83,18 @@ export default function About() {
                   >
                     <circle cx={2} cy={2} r={2} fill="currentColor" />
                   </svg>
-                  {item.date}
+                  {t(`timeline.${item.key}.date`)}
+
                   <div
                     className="absolute -ml-2 h-px w-screen -translate-x-full bg-gray-900/10 sm:-ml-4 lg:static lg:-mr-6 lg:ml-8 lg:w-auto lg:flex-auto lg:translate-x-0 sm:hidden lg:flex hidden"
                     aria-hidden="true"
                   />
                 </time>
                 <p className="mt-6 text-lg font-semibold leading-8 tracking-tight text-gray-900">
-                  {item.name}
+                  {t(`timeline.${item.key}.name`)}
                 </p>
                 <p className="mt-1 text-base leading-7 text-gray-600">
-                  {item.description}
+                  {t(`timeline.${item.key}.description`)}
                 </p>
               </div>
             ))}

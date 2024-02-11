@@ -1,7 +1,10 @@
 import { avatar } from "../assets/barrel";
 import "./css/Header.css";
+import { useTranslation } from "react-i18next";
 
 export default function Header() {
+  const { t } = useTranslation();
+
   return (
     <section
       className="header-container flex text-gray-600 body-font mx-auto 
@@ -22,13 +25,11 @@ export default function Header() {
           </h2>
 
           <p className="text-3xl font-bold tracking-tight text-black mt-3 sm:text-4xl lg:text-5xl">
-            Full Stack Developer
+            {t("headerTitle")}
           </p>
 
           <p className="mt-6 text-lg leading-7 text-gray-500">
-            Soy un desarrollador Full Stack con experiencia en el desarrollo de
-            aplicaciones web. Me apasiona el desarollo frontend UI/UX y aprender
-            nuevas tecnologías.
+            {t("headerDescription")}
           </p>
 
           <div className="mt-6 flex">
@@ -36,7 +37,7 @@ export default function Header() {
               href="#"
               className="text-lg font-semibold leading-6 text-gray-900"
             >
-              Conocer más &nbsp;
+              {t("headerScrollButton")} &nbsp;
               <span aria-hidden="true">&rarr;</span>
             </a>
           </div>

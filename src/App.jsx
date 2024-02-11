@@ -1,4 +1,5 @@
 import About from "./components/About";
+import BackToTopButton from "./components/BackToTopButton";
 import Footer from "./components/Footer";
 import Header from "./components/Header";
 import Navbar from "./components/Navbar";
@@ -16,6 +17,8 @@ function App() {
         <About />
         <Footer />
       </div>
+
+      <BackToTopButton />
     </>
   );
 }

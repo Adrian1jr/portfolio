@@ -1,0 +1,38 @@
+{
+    "translation": {
+      "headerTitle": "Full Stack Developer",
+      "headerDescription": "I am a Full Stack developer with experience in web application development. I am passionate about frontend development, UI/UX and learning new technologies.",
+      "headerScrollButton": "Learn More",
+
+      "aboutDescription": "I graduated as a Computer Systems Engineer from the Instituto Tecnológico de Nuevo Laredo. Currently, I am dedicated to full-stack web development and work to create custom solutions to meet specific customer needs.",
+      "aboutExperienceTitle": "Work Experience",
+
+      "timeline": {
+        "marketingDigital": {
+          "name": "Digital Marketing",
+          "description": "Development of websites and digital marketing at Intra Solutions.",
+          "date": "01/11/2021 - 04/11/2021",
+          "dateTime": "2021-04"
+        },
+        "programadorFrontEnd": {
+          "name": "Front-End Developer",
+          "description": "Web Developer, Basic Web Design, and preventive and corrective support at Syntranet.",
+          "date": "04/05/2021 - 11/05/2022",
+          "dateTime": "2021-11"
+        },
+        "freelance": {
+          "name": "Freelancer",
+          "description": "Expert in building customized solutions to meet specific client needs.",
+          "date": "04/05/2022 - Present",
+          "dateTime": "2022-12"
+        },
+        "programadorFullStack": {
+          "name": "Full-Stack Developer",
+          "description": "Front-end and back-end programming with multiple languages/frameworks at Lead One LLC.",
+          "date": "11/07/2022 - Present",
+          "dateTime": "2022-07"
+        }
+      }
+    }
+}
+ 
