@@ -12,6 +12,7 @@ export default function Projects() {
       description: t("projectCards.ascar.description"),
       status: t("projectCards.ascar.status"),
       imageUrl: ascarLogo,
+      url: "https://www.ascarsistemas.com",
     },
     {
       id: 2,
@@ -19,6 +20,7 @@ export default function Projects() {
       description: t("projectCards.geekoShop.description"),
       status: t("projectCards.geekoShop.status"),
       imageUrl: geekoShop,
+      url: "https://adrian1jr.github.io/",
     },
     {
       id: 3,
@@ -26,6 +28,7 @@ export default function Projects() {
       description: t("projectCards.pokedex.description"),
       status: t("projectCards.pokedex.status"),
       imageUrl: pokedexLogo,
+      url: "",
     },
   ];
 

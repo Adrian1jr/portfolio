@@ -1,6 +1,9 @@
 import { Menu } from "@headlessui/react";
-import { EllipsisHorizontalIcon } from "@heroicons/react/20/solid";
 import { useTranslation } from "react-i18next";
+import {
+  ArrowTopRightOnSquareIcon,
+  LockClosedIcon,
+} from "@heroicons/react/24/outline";
 
 export default function ProjectCard({ projects }) {
   const { t } = useTranslation();
@@ -25,12 +28,23 @@ export default function ProjectCard({ projects }) {
               {project.name}
             </div>
             <Menu as="div" className="relative ml-auto">
-              <Menu.Button className="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500">
+              <Menu.Button
+                className="-m-2.5 block p-2.5 text-gray-400 hover:text-gray-500"
+                onClick={(e) => {
+                  e.preventDefault();
+                  if (!project.url) return;
+                  window.open(project.url, "_blank");
+                }}
+              >
                 <span className="sr-only">Open options</span>
-                <EllipsisHorizontalIcon
-                  className="h-5 w-5"
-                  aria-hidden="true"
-                />
+                {project.url ? (
+                  <ArrowTopRightOnSquareIcon
+                    className="h-5 w-5"
+                    aria-hidden="true"
+                  />
+                ) : (
+                  <LockClosedIcon className="h-5 w-5" aria-hidden="true" />
+                )}
               </Menu.Button>
             </Menu>
           </div>
