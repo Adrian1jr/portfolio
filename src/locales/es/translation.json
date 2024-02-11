@@ -1,5 +1,13 @@
 {
     "translation": {
+      "navbar": {
+        "home": "Inicio",
+        "about": "Sobre mí",
+        "skills": "Habilidades",
+        "projects": "Proyectos",
+        "contact": "Contacto"
+      },
+      
       "headerTitle": "Desarollador Full Stack",
       "headerDescription": "Soy un desarrollador Full Stack con experiencia en el desarrollo de aplicaciones web. Me apasiona, él desarrolló frontend, UI/UX y aprender nuevas tecnologías.",
       "headerScrollButton": "Conocer más",
@@ -34,6 +42,31 @@
         }
       },
 
+      "projects": {
+        "title": "Proyectos",
+        "description": "Algunos de los proyectos en los que he trabajado, tanto personales como para clientes."
+      },
+
+      "projectCardTitles": {
+        "description": "Descripción",
+        "status": "Estatus"
+      },
+
+      "projectCards": {
+        "ascar": {
+          "description": "Pagina web para empresa de Ascar Sistemas hecha con React y TailwindCSS.",
+          "status": "Completado"
+        },
+        "geekoShop": {
+          "description": "Pagina de prueba basada en una tienda en línea de productos hecha con HTML, CSS y JavaScript.",
+          "status": "Completado"
+        },
+        "pokedex": {
+          "description": "Aplicación web para buscar información de los pokemones hecha con React y TailwindCSS.",
+          "status": "En Proceso"
+        }
+      },
+
       "contact": {
         "title": "Contacto",
         "subtitle": "¿Listo para llevar su negocio al siguiente nivel? Contáctame hoy y comencemos a trabajar juntos.",
@@ -55,6 +88,8 @@
         "errorTitle": "Error al enviar el correo",
         "errorMessage": "Ocurrió un error al enviar el correo. Por favor, inténtalo de nuevo más tarde.",
         "closeButton": "Cerrar"
-      }
+      },
+
+      "footer": "© 2024 Adrianjr. Todos los derechos reservados."
     }
 }

@@ -1,5 +1,13 @@
 {
     "translation": {
+      "navbar": {
+        "home": "Home",
+        "about": "About",
+        "skills": "Skills",
+        "projects": "Projects",
+        "contact": "Contact"
+      },
+      
       "headerTitle": "Full Stack Developer",
       "headerDescription": "I am a Full Stack developer with experience in web application development. I am passionate about frontend development, UI/UX and learning new technologies.",
       "headerScrollButton": "Learn More",
@@ -34,6 +42,31 @@
         }
       },
 
+      "projects": {
+        "title": "Projects",
+        "description": "Some of the projects I have worked on, both personal and for clients."
+      },
+
+      "projectCardTitles": {
+        "description": "Description",
+        "status": "Status"
+      },
+
+      "projectCards": {
+        "ascar": {
+          "description": "Website for Ascar Systems company built with React and TailwindCSS.",
+          "status": "Completed"
+        },
+        "geekoShop": {
+          "description": "Test page based on an online product store built with HTML, CSS, and JavaScript.",
+          "status": "Completed"
+        },
+        "pokedex": {
+          "description": "Web application to search for information about Pokémon built with React and TailwindCSS.",
+          "status": "In Progress"
+        }
+      },
+
       "contact": {
         "title": "Contact",
         "subtitle": "Ready to take your business to the next level? Contact me today and let's start working together.",
@@ -55,7 +88,9 @@
         "errorTitle": "Error sending email",
         "errorMessage": "An error occurred while sending the email. Please try again later.",
         "closeButton": "Close"
-      }
+      },
+
+      "footer": "© 2024 Adrianjr. All rights reserved."
     }
 }
  

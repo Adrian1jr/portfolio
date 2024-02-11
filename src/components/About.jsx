@@ -42,7 +42,7 @@ export default function About() {
   return (
     <>
       {/* Top */}
-      <div className="mx-auto max-w-7xl" id="about">
+      <div className="mx-auto max-w-7xl pt-20 lg:pt-0 md:pt-0" id="about">
         <div
           className="mx-auto flex max-w-2xl flex-col gap-8 px-6 py-6 
                  sm:p-8 lg:mx-0 lg:max-w-7xl lg:flex-row

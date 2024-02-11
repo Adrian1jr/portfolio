@@ -4,14 +4,17 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { logo } from "../assets/barrel";
 import { useEffect, useState } from "react";
 import LanguageMenu from "./LanguageMenu";
+import { useTranslation } from "react-i18next";
 
 export default function Navbar() {
+  const { t } = useTranslation();
   const [isScrolled, setIsScrolled] = useState(false);
+
   const menuItems = [
-    { id: 1, title: "Sobre mi", link: "#about" },
-    { id: 2, title: "Habilidades", link: "#" },
-    { id: 3, title: "Proyectos", link: "#" },
-    { id: 4, title: "Contacto", link: "#contact" },
+    { id: 1, title: t("navbar.about"), link: "#about" },
+    { id: 2, title: t("navbar.skills"), link: "#" },
+    { id: 3, title: t("navbar.projects"), link: "#projects" },
+    { id: 4, title: t("navbar.contact"), link: "#contact" },
   ];
 
   useEffect(() => {
@@ -65,7 +68,7 @@ export default function Navbar() {
                       to={item.link.substring(1)}
                       spy={true}
                       smooth={true}
-                      offset={-70}
+                      offset={window.scrollY > 50 ? -120 : -140}
                       duration={1000}
                       className="inline-flex items-center border-b-2 border-transparent px-1 pt-1 text-base font-medium text-gray-500 hover:border-gray-300 hover:text-gray-700"
                     >
