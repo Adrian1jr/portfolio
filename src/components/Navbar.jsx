@@ -32,10 +32,11 @@ export default function Navbar() {
   }, []);
 
   return (
+    //fixed top-0 w-full z-50 TODO: fix this issue class
     <Disclosure
       as="nav"
       className={`bg-white shadow transition-all ease-in-out duration-1000 ${
-        isScrolled ? "fixed top-0 w-full z-50" : ""
+        isScrolled ? "" : ""
       }`}
     >
       {({ open }) => (
