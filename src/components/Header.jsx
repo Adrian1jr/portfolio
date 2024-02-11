@@ -1,3 +1,4 @@
+import { Link } from "react-scroll";
 import { avatar } from "../assets/barrel";
 import "./css/Header.css";
 import { useTranslation } from "react-i18next";
@@ -33,13 +34,21 @@ export default function Header() {
           </p>
 
           <div className="mt-6 flex">
-            <a
-              href="#"
-              className="text-lg font-semibold leading-6 text-gray-900"
+            <Link
+              key={"hire-me-button"}
+              to={"contact"}
+              spy={true}
+              smooth={true}
+              offset={window.scrollY > 50 ? -120 : -140}
+              duration={1000}
+              className="
+              bg-gray-100 rounded-full px-5 py-2 transition duration-500 ease-in-out
+              text-lg font-semibold leading-6 text-gray-900 cursor-pointer
+              hover:bg-gray-200 hover:text-gray-900 border-x-2"
             >
               {t("headerScrollButton")} &nbsp;
               <span aria-hidden="true">&rarr;</span>
-            </a>
+            </Link>
           </div>
         </div>
       </div>

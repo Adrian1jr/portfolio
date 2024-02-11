@@ -12,8 +12,8 @@ export default function Navbar() {
 
   const menuItems = [
     { id: 1, title: t("navbar.about"), link: "#about" },
-    { id: 2, title: t("navbar.skills"), link: "#" },
-    { id: 3, title: t("navbar.projects"), link: "#projects" },
+    { id: 2, title: t("navbar.projects"), link: "#projects" },
+    { id: 3, title: t("navbar.skills"), link: "#skills" },
     { id: 4, title: t("navbar.contact"), link: "#contact" },
   ];
 
