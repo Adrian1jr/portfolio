@@ -67,6 +67,11 @@
         }
       },
 
+      "skills": {
+        "title": "Skills",
+        "description": "I have experience in various technologies and tools for web development."
+      },
+
       "contact": {
         "title": "Contact",
         "subtitle": "Ready to take your business to the next level? Contact me today and let's start working together.",

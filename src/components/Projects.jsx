@@ -38,7 +38,7 @@ export default function Projects() {
         {t("projects.title")}
       </h2>
 
-      <p className="mt-2 mb-6 text-center text-gray-500">
+      <p className="mt-2 mb-6 text-center text-lg text-gray-500">
         {t("projects.description")}
       </p>
 

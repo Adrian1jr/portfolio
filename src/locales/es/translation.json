@@ -67,6 +67,12 @@
         }
       },
 
+      "skills": {
+        "title": "Habilidades",
+        "description": "Tengo experiencia en diversas tecnologías y herramientas para el desarrollo web."
+        
+      },
+
       "contact": {
         "title": "Contacto",
         "subtitle": "¿Listo para llevar su negocio al siguiente nivel? Contáctame hoy y comencemos a trabajar juntos.",
