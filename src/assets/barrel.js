@@ -11,7 +11,7 @@ export { default as ascarLogo } from "./Projects/ascar.png";
 export { default as geekoShop } from "./Projects/geekoShop.png";
 export { default as pokedexLogo } from "./Projects/pokedex.png";
 
-//Skills
+//Skills - Logos
 export { default as reactLogo } from "./Skills/reactLogo.webp";
 export { default as nodeLogo } from "./Skills/nodeLogo.webp";
 export { default as htmlLogo } from "./Skills/htmlLogo.webp";
