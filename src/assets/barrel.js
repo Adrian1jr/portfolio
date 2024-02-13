@@ -17,7 +17,7 @@ export { default as nodeLogo } from "./Skills/nodeLogo.webp";
 export { default as htmlLogo } from "./Skills/htmlLogo.webp";
 export { default as cssLogo } from "./Skills/cssLogo.webp";
 export { default as jsLogo } from "./Skills/javascriptLogo.webp";
-export { default as gitLogo } from "./Skills/gitLogo.webp";
+export { default as gitLogo } from "./Skills/gitlogo.webp";
 export { default as angularLogo } from "./Skills/angularLogo.webp";
 export { default as nestLogo } from "./Skills/nestLogo.webp";
 export { default as mongoLogo } from "./Skills/mongoLogo.webp";
