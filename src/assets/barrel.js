@@ -3,13 +3,13 @@ export { default as avatar } from "./avatar.png";
 export { default as about } from "./about.jpg";
 
 //Banderas
-export { default as banderaMexico } from "./Banderas/mexico.png";
-export { default as banderaUSA } from "./Banderas/usa.png";
+export { default as banderaMexico } from "./Banderas/mexico.webp";
+export { default as banderaUSA } from "./Banderas/usa.webp";
 
 //Proyectos
-export { default as ascarLogo } from "./Projects/ascar.png";
-export { default as geekoShop } from "./Projects/geekoShop.png";
-export { default as pokedexLogo } from "./Projects/pokedex.png";
+export { default as ascarLogo } from "./Projects/ascar.webp";
+export { default as geekoShop } from "./Projects/geekoShop.webp";
+export { default as pokedexLogo } from "./Projects/pokedex.webp";
 
 //Skills - Logos
 export { default as reactLogo } from "./Skills/reactLogo.webp";
