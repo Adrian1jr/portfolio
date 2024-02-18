@@ -31,12 +31,6 @@ export default function LanguageMenu() {
         >
           <div className="flex gap-1.5 items-center">
             <LanguageIcon className="h-6 w-6" color="" aria-hidden="true" />
-            <span className="hidden sm:inline-block md:inline-block lg:inline-block">
-              -
-            </span>
-            <span className="text-lg font-medium hidden sm:inline-block md:inline-block lg:inline-block">
-              {currentLanguage === "en" ? "En" : "Es"}
-            </span>
           </div>
         </Menu.Button>
       </div>

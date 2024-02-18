@@ -37,9 +37,9 @@ export default function Navbar() {
   return (
     <Disclosure
       as="nav"
-      className={`bg-white shadow transition-all ease-in-out duration-1000 ${
-        isScrolled ? "fixed top-0 w-full z-50" : ""
-      }`}
+      className={`bg-white shadow
+         transition-all ease-in-out duration-1000 
+        ${isScrolled ? "fixed top-0 w-full z-50" : ""}`}
     >
       {({ open }) => (
         <>
