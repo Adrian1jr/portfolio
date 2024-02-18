@@ -1,7 +1,9 @@
 import { Link } from "react-scroll";
 import { avatar } from "../assets/barrel";
-import "./css/Header.css";
 import { useTranslation } from "react-i18next";
+import "./css/Header.css";
+import { FaArrowRight } from "react-icons/fa";
+import { FaGithub } from "react-icons/fa";
 
 export default function Header() {
   const { t } = useTranslation();
@@ -9,7 +11,7 @@ export default function Header() {
   return (
     <section
       className="header-container flex text-gray-600 body-font mx-auto 
-      max-w-7xl sm:px-6 lg:px-8 h-screen pb-0 lg:pb-32"
+      max-w-7xl sm:px-6 lg:px-8 h-screen pb-0 lg:pb-28"
       id="header"
     >
       <div
@@ -29,26 +31,35 @@ export default function Header() {
             {t("headerTitle")}
           </p>
 
-          <p className="mt-6 text-lg leading-7 text-gray-500">
+          <p className="mt-6 text-lg leading-7 text-gray-500 ">
             {t("headerDescription")}
           </p>
 
-          <div className="mt-6 flex">
+          <div className="mt-6 flex gap-3">
             <Link
-              key={"hire-me-button"}
               to={"contact"}
-              spy={true}
               smooth={true}
               offset={window.scrollY > 50 ? -120 : -140}
               duration={1000}
-              className="
-              bg-gray-100 rounded-full px-5 py-2 transition duration-500 ease-in-out
-              text-lg font-semibold leading-6 text-gray-900 cursor-pointer
-              hover:bg-gray-200 hover:text-gray-900 border-x-2"
+              className="inline-flex items-center gap-x-1.5 rounded-full bg-indigo-600 px-4 py-1.5 text-base font-semibold text-white shadow-sm cursor-pointer transition-all duration-300
+              transform hover:scale-105 hover:shadow-md  
+              "
             >
-              {t("headerScrollButton")} &nbsp;
-              <span aria-hidden="true">&rarr;</span>
+              {t("headerScrollButton")}
+              <FaArrowRight className="ml-0.5 h-4 w-4" aria-hidden="true" />
             </Link>
+
+            <button
+              type="button"
+              onClick={() => {
+                window.open("https://github.com/Adrian1jr", "_blank");
+              }}
+              className="inline-flex items-center gap-x-1.5 rounded-full bg-slate-800 px-4 py-1.5 text-base font-semibold text-white shadow-sm cursor-pointer transition-all duration-100 
+              transform hover:scale-105"
+            >
+              GitHub
+              <FaGithub className="ml-0.5 h-4 w-4" aria-hidden="true" />
+            </button>
           </div>
         </div>
       </div>
