@@ -92,7 +92,7 @@ export default function Navbar() {
                     to={item.link.substring(1)}
                     spy={true}
                     smooth={true}
-                    offset={window.scrollY > 50 ? -70 : -350}
+                    offset={window.scrollY > 50 ? -70 : -300}
                     duration={500}
                     className="block border-l-4 border-transparent py-2 pl-3 pr-4 text-base font-medium text-gray-500 hover:border-gray-300 hover:bg-gray-50 hover:text-gray-700 cursor-pointer"
                     onClick={() => {
